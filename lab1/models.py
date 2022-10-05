@@ -1,7 +1,6 @@
 from django.db import models
 
 
-
 # Create your models here.
 class Game(models.Model):
     image = models.TextField(verbose_name='Изображение')

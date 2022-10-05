@@ -6,9 +6,6 @@
 {% block content %}
 <ul>
     {% for game in data.games %}
-        <!-- include позволяет рендерить в месте использования тега другой шаблон.
-         with - позволяет сменить контекст, т.е. в шаблоне qw.html будут доступны
-         не только game, games , но и element-->
        {% include 'qw.html' with element=game %}
     {% empty %}
         <li>Список пуст</li>

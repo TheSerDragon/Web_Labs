@@ -3,9 +3,7 @@ from django.shortcuts import render
 from datetime import date
 
 
-
 from lab1.models import Game
-
 
 def GameList(request):
     return render(request, 'games.html', {'data' : {
