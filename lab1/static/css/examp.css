@@ -1,0 +1,33 @@
+body {
+    background-color: #f1f1f1;
+    color: #000000;
+    font-size: 24px;
+    font-weight: normal;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h2{
+     color: #0a41ac;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    color: purple;
+}
+
+.PS {
+    width: 200px;
+    height: 200px;
+    border-radius: 28px;
+    box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.25);
+    display: block;
+    margin: auto;
+}
