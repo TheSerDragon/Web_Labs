@@ -1,9 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6919b17e-479d-427d-997e-1aff569cc9ea" name="Changes" comment="Add files">
+    <list default="true" id="acf37b36-08d1-4c88-829d-b2c9a943acb6" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/games/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/games/migrations/0001_initial.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/games/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/games/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/games/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/games/serializers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/games/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/games/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/genres/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/genres/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/genres/apps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/genres/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/genres/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/genres/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/genres/serializers.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/genres/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/genres/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab3/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab3/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lab3/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab3/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/apps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/serializers.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/platforms/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/publishers/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/publishers/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/publishers/apps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/publishers/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/publishers/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/publishers/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/publishers/serializers.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/publishers/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/publishers/views.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,19 +57,19 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectId" id="2GFoo6k01KZkWlfVUs2aZIq4Kth" />
+  <component name="ProjectId" id="2GGybdut39Ki088QgifK7ghSyk7" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="lab3" type="Python.DjangoServer" factoryName="Django server">
       <module name="lab3" />
@@ -65,23 +99,13 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="6919b17e-479d-427d-997e-1aff569cc9ea" name="Changes" comment="" />
-      <created>1665993865246</created>
+      <changelist id="acf37b36-08d1-4c88-829d-b2c9a943acb6" name="Changes" comment="" />
+      <created>1666029287888</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1665993865246</updated>
-      <workItem from="1665993889878" duration="1659000" />
-      <workItem from="1665996940730" duration="3487000" />
-      <workItem from="1666017980014" duration="85000" />
+      <updated>1666029287888</updated>
+      <workItem from="1666029310397" duration="1946000" />
     </task>
-    <task id="LOCAL-00001" summary="Add files">
-      <created>1666000450930</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1666000450930</updated>
-    </task>
-    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -97,9 +121,5 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="Add files" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add files" />
   </component>
 </project>
