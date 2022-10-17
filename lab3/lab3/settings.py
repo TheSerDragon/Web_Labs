@@ -43,6 +43,7 @@ INSTALLED_APPS = [
 
     # Наше приложение
     'games',
+    'genres',
 ]
 
 MIDDLEWARE = [
