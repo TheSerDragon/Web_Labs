@@ -1,13 +1,11 @@
-from django.shortcuts import render
 from rest_framework import viewsets
-from games.serializers import GameSerializer
-from games.models import Game
+from platforms.serializers import PlatformSerializer
+from platforms.models import Platform
 
-
-class GameViewSet(viewsets.ModelViewSet):
+class PlatformViewSet(viewsets.ModelViewSet):
     """
     API endpoint, который позволяет просматривать и редактировать акции компаний
     """
     # queryset всех пользователей для фильтрации по дате последнего изменения
-    queryset = Game.objects.all().order_by('price')
-    serializer_class = GameSerializer  # Сериализатор для модели
+    queryset = Platform.objects.all().order_by('plat_name')
+    serializer_class = PlatformSerializer  # Сериализатор для модели

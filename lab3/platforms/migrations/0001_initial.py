@@ -12,10 +12,10 @@ class Migration(migrations.Migration):
 
     operations = [
         migrations.CreateModel(
-            name='Genre',
+            name='Platform',
             fields=[
                 ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('genre_name', models.CharField(max_length=50, verbose_name='Название жанра')),
+                ('plat_name', models.CharField(max_length=50, verbose_name='Название платформы')),
             ],
         ),
     ]
