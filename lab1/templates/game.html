@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Игра №{{ data.game.id }}{% endblock %}
+
+{% block content %}
+    <div class="info">
+        <img src="{% static data.game.image %}" class="IMG">
+        <div class="info-text">
+            <div>Название: {{ data.game.name }}</div>
+            <div>Жанр: {{ data.game.genre }}</div>
+            <div>Дата выхода: {{ data.game.date }}</div>
+            <div>Описание: {{ data.game.descrip }}</div>
+        </div>
+    </div>
+{% endblock %}
