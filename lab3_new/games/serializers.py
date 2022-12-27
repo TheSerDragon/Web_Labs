@@ -30,7 +30,7 @@ class GameSimpleSerializer(serializers.ModelSerializer):
     class Meta:
         model = Game
         fields = ["id_game", "game_name", "genre", "publisher", "platform", "date_release", "price", "description",
-                  "game_image"]
+                  "game_image", "shown"]
 
 class GameSerializer(serializers.ModelSerializer):
     platform = PlatformSerializer()
@@ -43,7 +43,7 @@ class GameSerializer(serializers.ModelSerializer):
 
         # Поля, которые мы сериализуем
         fields = ["id_game", "game_name", "genre", "publisher", "platform", "date_release", "price", "description",
-                  "game_image"]
+                  "game_image", "shown"]
 
 class UsersSerializer(serializers.ModelSerializer):
     class Meta:
@@ -63,7 +63,7 @@ class POSTOrderSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Order
-        fields = ["id", "userid", "order_statusid", "order_price_sum", "order_date"]
+        fields = ["id", "userid", "order_statusid", "order_price_sum", "order_date", "payment_date", "delivery_date"]
 
 
 # for non-GET methods
@@ -86,7 +86,14 @@ class GameInCartSerializer(serializers.ModelSerializer):
 class GETOrderSerializer(serializers.ModelSerializer):
     order_statusid = OrderStatusSerializer()
     ordered_game = GameInCartSerializer(many=True, read_only=True)
+    userid = UsersSerializer()
 
     class Meta:
         model = Order
-        fields = ["id", "userid", "order_statusid", "order_price_sum", "order_date", "ordered_game"]
+        fields = ["id", "userid", "order_statusid", "order_price_sum", "order_date", "payment_date", "delivery_date", "ordered_game"]
+
+
+class GameGenreSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Genre
+        fields = ["id_genre", "genre_name"]

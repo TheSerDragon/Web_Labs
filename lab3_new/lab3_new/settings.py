@@ -77,6 +77,8 @@ INSTALLED_APPS = [
     "corsheaders",
 ]
 
+CSRF_COOKIE_SECURE = False
+
 CSRF_TRUSTED_ORIGINS = ['http://localhost:3000']
 
 '''REST_FRAMEWORK = {

@@ -1,5 +1,6 @@
 from django.db import models
 from django.contrib.auth.models import PermissionsMixin
+from django.utils.timezone import now
 
 class Genre(models.Model):
     id_genre = models.BigAutoField(primary_key=True)
@@ -31,14 +32,15 @@ class Publisher(models.Model):
 
 class Game(models.Model):
     id_game = models.BigAutoField(primary_key=True)
-    game_image = models.CharField(max_length=512)
+    game_image = models.CharField(max_length=512, default="images/games/unknow.jpg")
     game_name = models.CharField(max_length=256)
-    genre = models.ForeignKey('Genre', models.DO_NOTHING, db_column='genre', blank=True, null=True)
-    publisher = models.ForeignKey('Publisher', models.DO_NOTHING, db_column='publisher', blank=True, null=True)
-    platform = models.ForeignKey('Platform', models.DO_NOTHING, db_column='platform', blank=True, null=True)
+    genre = models.ForeignKey('Genre', models.DO_NOTHING, db_column='genre', blank=True, null=True, default="1")
+    publisher = models.ForeignKey('Publisher', models.DO_NOTHING, db_column='publisher', blank=True, null=True, default="1")
+    platform = models.ForeignKey('Platform', models.DO_NOTHING, db_column='platform', blank=True, null=True, default="1")
     date_release = models.DateField()
     price = models.DecimalField(max_digits=10, decimal_places=0, blank=True, null=True)
     description = models.TextField()
+    shown = models.IntegerField(default=1)
 
     class Meta:
         managed = False
@@ -73,7 +75,9 @@ class Order(models.Model):
     userid = models.ForeignKey('Users', models.DO_NOTHING, db_column='userID', blank=True, null=True)  # Field name made lowercase.
     order_statusid = models.ForeignKey('OrderStatus', models.DO_NOTHING, db_column='order_statusID', default=6, blank=True, null=True)  # Field name made lowercase.
     order_price_sum = models.DecimalField(max_digits=7, decimal_places=2, default="0.00", blank=True, null=True)
-    order_date = models.DateTimeField(auto_now=True)
+    order_date = models.DateTimeField(default=now)
+    payment_date = models.DateTimeField(blank=True, null=True)
+    delivery_date = models.DateTimeField(blank=True, null=True)
 
     class Meta:
         managed = False
